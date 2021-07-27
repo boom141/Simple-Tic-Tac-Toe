@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+.Winner{
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+.playB{
+    position: absolute;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    font-size: 2rem;
+    opacity: 1;
+    background: red;
+    outline: none;
+    border: none;
+    top: 80%;
+    left: 45.5%;
+}
+.PLAYER{
+    margin-top: 6rem;
+    margin-left: 20.6rem;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    opacity: 0;
+    
+}
+#PLAYER1{
+    color: red;
+    
+}
+#PLAYER2{
+    color: black;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    opacity: 0;
+    
+}
+.Box-element{
+    z-index: 5;
+    height: 100px;
+    width: 100px;
+   border: 3px solid black;
+   cursor: pointer;
+   pointer-events: none;
+   
+
+}
+
+.player2{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    border: 10px solid black;
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.5);
+}
+
+.player1 {
+    margin-left: 1.9rem;
+    position: relative;
+}
+
+.player1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    height: 90px;
+    width: 15px;
+    margin-top: 1.5px;
+    background: black;
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.5);
+    transform:rotate(45deg);
+    
+}
+
+.player1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    height: 90px;
+    width: 15px;
+    margin-top: 1.5px;
+    background: black;
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.5);
+    transform:rotate(-45deg);
+}
+
+.Reset{
+    position: absolute;
+    height: 30px;
+    width: 50px;
+    top: 30rem;
+    left: 48%;
+    opacity: 0;
+    background: lightgrey;
+    border: none;
+    cursor: pointer;
+    outline: none;
+   
+
+}
+.WinnerCon{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    position: absolute;
+    left: 40.5%;
+    top: 6rem;
+    opacity: 1;
+}
+
+.chkID{
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+    opacity: 0;
+}
+
